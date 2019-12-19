@@ -1,0 +1,964 @@
+{
+    "id": "fb95e668970735d81abcc24bd2bf9afb",
+    "name": "Otreeba Open Cannabis API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "6470554a59481121206bce2402b62e5b",
+            "name": "Get a list of all current seed companies.",
+            "url": "httpsapi.otreeba.com\/v1\/seed-companies",
+            "description": "Returns a paginated list of seed companies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed4166aed04bd7d2f975cb352df4e839",
+            "name": "Find seed company by Open Cannabis Product Code (OCPC).",
+            "url": "httpsapi.otreeba.com\/v1\/seed-companies\/{ocpc}",
+            "description": "Returns a single seed company.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "3571da8ecd5de14b1ba32949740954fc",
+            "name": "Find strains for a seed company by Open Cannabis Product Code (OCPC).",
+            "url": "httpsapi.otreeba.com\/v1\/seed-companies\/{ocpc}\/strains",
+            "description": "Returns a paginated list of strains for a single seed company.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "cdea1663a888af9f6da5aaa1825b7f85",
+            "name": "Get a list of all current edibles.",
+            "url": "httpsapi.otreeba.com\/v1\/edibles",
+            "description": "Returns a paginated list of edibles.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "c614a75dd4904be4ff41829d90626b21",
+            "name": "Find edible by Open Cannabis Product Code (OCPC).",
+            "url": "httpsapi.otreeba.com\/v1\/edibles\/{ocpc}",
+            "description": "Returns a single edible.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "f2336c5a396c5e79fc90ccf848ee7aae",
+            "name": "Get a list of all current extracts.",
+            "url": "httpsapi.otreeba.com\/v1\/extracts",
+            "description": "Returns a paginated list of extracts.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "7cd886b6248dfe03ffb22335e2bdf733",
+            "name": "Find extract by Open Cannabis Product Code (OCPC).",
+            "url": "httpsapi.otreeba.com\/v1\/extracts\/{ocpc}",
+            "description": "Returns a single extract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "c0dbf996524bd2981f5321fbfe23c4ba",
+            "name": "Get a list of all current flowers.",
+            "url": "httpsapi.otreeba.com\/v1\/flowers",
+            "description": "Returns a paginated list of flowers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "89dc90498262115e483d2770aba5abe3",
+            "name": "Find flower by Open Cannabis Product Code (OCPC).",
+            "url": "httpsapi.otreeba.com\/v1\/flowers\/{ocpc}",
+            "description": "Returns a single flower.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "747386f554460755407bd491be8e16bf",
+            "name": "Get a list of all current brands.",
+            "url": "httpsapi.otreeba.com\/v1\/brands",
+            "description": "Returns a paginated list of brands.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "31d28a2a51f899a5b8aa2e415c9ae14b",
+            "name": "Find brand by Open Cannabis Product Code (OCPC).",
+            "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}",
+            "description": "Returns a single brand.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "74a6aeb0201f2ba03bc552234fd6ac7d",
+            "name": "Get a list of all current flowers for the given brand.",
+            "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}\/flowers",
+            "description": "Returns a paginated list of flowers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "28321d73700ceb30b7b4f00732c7db18",
+            "name": "Get a list of all current extracts for the given brand.",
+            "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}\/extracts",
+            "description": "Returns a paginated list of extracts.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "7cedd5a10f8b18bebba6e6ccc1b56dc1",
+            "name": "Get a list of all current edibles for the given brand.",
+            "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}\/edibles",
+            "description": "Returns a paginated list of edibles.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "24f493730e9cdbfb0a18acfac80d4862",
+            "name": "Get a list of all current products for the given brand.",
+            "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}\/products",
+            "description": "Returns a paginated list of products.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "b52cd9aed8aad9c8c9f676483a852c1f",
+            "name": "Get a list of all current products.",
+            "url": "httpsapi.otreeba.com\/v1\/products",
+            "description": "Returns a paginated list of products.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "950a6fb6b7f61410f5a02086c4ec1d1c",
+            "name": "Find product by Open Cannabis Product Code (OCPC).",
+            "url": "httpsapi.otreeba.com\/v1\/products\/{ocpc}",
+            "description": "Returns a single product.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "9ca52b2ef044847d648bcf92695358ab",
+            "name": "Get a list of all current strains.",
+            "url": "httpsapi.otreeba.com\/v1\/strains",
+            "description": "Returns a paginated list of strains.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "be5059aa647b5b928c66aef3d9d67828",
+            "name": "Find strain by Open Cannabis Product Code (OCPC).",
+            "url": "httpsapi.otreeba.com\/v1\/strains\/{ocpc}",
+            "description": "Returns a single strain.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ocpc",
+                    "description": "OCPC of the seed company to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "2237e06d034edfecb9be0a986b7e248e",
+            "name": "Get a list of all current studies.",
+            "url": "httpsapi.otreeba.com\/v1\/studies",
+            "description": "Returns a paginated list of studies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "a26d941d0fbe7f9fe889d5ca08f6ade7",
+            "name": "Get a list of all current conditions for studies.",
+            "url": "httpsapi.otreeba.com\/v1\/studies\/conditions",
+            "description": "Returns a list of all current conditions for studies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "3af82092f6f98e22b7f760a6902af852",
+            "name": "Find study by DOI, PubMed ID, or slug.",
+            "url": "httpsapi.otreeba.com\/v1\/studies\/{identifierType}\/{identifier}",
+            "description": "Returns a single study.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "identifierType",
+                    "description": "Type of identifier to for the study to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "identifier",
+                    "description": "Identifier for the study to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        },
+        {
+            "id": "e1a264d86a7dd691f564a17263ce8116",
+            "name": "Get a list of all current studies for a given condition.",
+            "url": "httpsapi.otreeba.com\/v1\/studies\/conditions\/{conditionSlug}",
+            "description": "Returns a paginated list of studies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conditionSlug",
+                    "description": "Slug of the condition to return studies for.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page to be returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "count",
+                    "description": "The number of items to return. Default 10. Max 50.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "How to sort the items.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "rawModeData": ""
+        }
+    ]
+}
