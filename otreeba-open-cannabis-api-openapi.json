@@ -1,0 +1,1051 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Otreeba Open Cannabis API",
+        "description": "This is an open, canonical database of cannabis seed companies, strains, brands, products, retailers, and studies from [Otreeba](https:\/\/otreeba.com). It is written on the OpenAPI Specification AKA Swagger. You can find out more about the Open API Initiative at [https:\/\/www.openapis.org\/](https:\/\/www.openapis.org), or more info on Swagger at [http:\/\/swagger.io\/](http:\/\/swagger.io\/).",
+        "termsOfService": "https:\/\/otreeba.com\/terms\/"
+    },
+    "servers": [
+        "httpsapi.otreeba.com\/v1"
+    ],
+    "paths": {
+        "\/seed-companies": {
+            "get": {
+                "summary": "Get a list of all current seed companies.",
+                "description": "Returns a paginated list of seed companies.",
+                "operationId": "GetSeedCompanies",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/seed-companies\/{ocpc}": {
+            "get": {
+                "summary": "Find seed company by Open Cannabis Product Code (OCPC).",
+                "description": "Returns a single seed company.",
+                "operationId": "GetSeedCompanyByOcpc",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    }
+                ]
+            }
+        },
+        "\/seed-companies\/{ocpc}\/strains": {
+            "get": {
+                "summary": "Find strains for a seed company by Open Cannabis Product Code (OCPC).",
+                "description": "Returns a paginated list of strains for a single seed company.",
+                "operationId": "GetSeedCompanyStrainsByOcpc",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    }
+                ]
+            }
+        },
+        "\/edibles": {
+            "get": {
+                "summary": "Get a list of all current edibles.",
+                "description": "Returns a paginated list of edibles.",
+                "operationId": "GetEdibles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/edibles\/{ocpc}": {
+            "get": {
+                "summary": "Find edible by Open Cannabis Product Code (OCPC).",
+                "description": "Returns a single edible.",
+                "operationId": "GetEdibleByOcpc",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    }
+                ]
+            }
+        },
+        "\/extracts": {
+            "get": {
+                "summary": "Get a list of all current extracts.",
+                "description": "Returns a paginated list of extracts.",
+                "operationId": "GetExtracts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/extracts\/{ocpc}": {
+            "get": {
+                "summary": "Find extract by Open Cannabis Product Code (OCPC).",
+                "description": "Returns a single extract.",
+                "operationId": "GetExtractByOcpc",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    }
+                ]
+            }
+        },
+        "\/flowers": {
+            "get": {
+                "summary": "Get a list of all current flowers.",
+                "description": "Returns a paginated list of flowers.",
+                "operationId": "GetFlowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/flowers\/{ocpc}": {
+            "get": {
+                "summary": "Find flower by Open Cannabis Product Code (OCPC).",
+                "description": "Returns a single flower.",
+                "operationId": "GetFlowerByOcpc",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    }
+                ]
+            }
+        },
+        "\/brands": {
+            "get": {
+                "summary": "Get a list of all current brands.",
+                "description": "Returns a paginated list of brands.",
+                "operationId": "GetBrands",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/brands\/{ocpc}": {
+            "get": {
+                "summary": "Find brand by Open Cannabis Product Code (OCPC).",
+                "description": "Returns a single brand.",
+                "operationId": "GetBrandByOcpc",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    }
+                ]
+            }
+        },
+        "\/brands\/{ocpc}\/flowers": {
+            "get": {
+                "summary": "Get a list of all current flowers for the given brand.",
+                "description": "Returns a paginated list of flowers.",
+                "operationId": "GetBrandFlowers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/brands\/{ocpc}\/extracts": {
+            "get": {
+                "summary": "Get a list of all current extracts for the given brand.",
+                "description": "Returns a paginated list of extracts.",
+                "operationId": "GetBrandExtracts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/brands\/{ocpc}\/edibles": {
+            "get": {
+                "summary": "Get a list of all current edibles for the given brand.",
+                "description": "Returns a paginated list of edibles.",
+                "operationId": "GetBrandEdibles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/brands\/{ocpc}\/products": {
+            "get": {
+                "summary": "Get a list of all current products for the given brand.",
+                "description": "Returns a paginated list of products.",
+                "operationId": "GetBrandProducts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/products": {
+            "get": {
+                "summary": "Get a list of all current products.",
+                "description": "Returns a paginated list of products.",
+                "operationId": "GetProducts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/products\/{ocpc}": {
+            "get": {
+                "summary": "Find product by Open Cannabis Product Code (OCPC).",
+                "description": "Returns a single product.",
+                "operationId": "GetProductByOcpc",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    }
+                ]
+            }
+        },
+        "\/strains": {
+            "get": {
+                "summary": "Get a list of all current strains.",
+                "description": "Returns a paginated list of strains.",
+                "operationId": "GetStrains",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/strains\/{ocpc}": {
+            "get": {
+                "summary": "Find strain by Open Cannabis Product Code (OCPC).",
+                "description": "Returns a single strain.",
+                "operationId": "GetStrainByOcpc",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ocpc",
+                        "in": "path",
+                        "description": "OCPC of the seed company to return."
+                    }
+                ]
+            }
+        },
+        "\/studies": {
+            "get": {
+                "summary": "Get a list of all current studies.",
+                "description": "Returns a paginated list of studies.",
+                "operationId": "GetStudies",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/studies\/conditions": {
+            "get": {
+                "summary": "Get a list of all current conditions for studies.",
+                "description": "Returns a list of all current conditions for studies.",
+                "operationId": "GetStudiesConditions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        },
+        "\/studies\/{identifierType}\/{identifier}": {
+            "get": {
+                "summary": "Find study by DOI, PubMed ID, or slug.",
+                "description": "Returns a single study.",
+                "operationId": "GetStudyByIdentifier",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "identifierType",
+                        "in": "path",
+                        "description": "Type of identifier to for the study to return."
+                    },
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": "Identifier for the study to return."
+                    }
+                ]
+            }
+        },
+        "\/studies\/conditions\/{conditionSlug}": {
+            "get": {
+                "summary": "Get a list of all current studies for a given condition.",
+                "description": "Returns a paginated list of studies.",
+                "operationId": "GetStudiesByCondition",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conditionSlug",
+                        "in": "path",
+                        "description": "Slug of the condition to return studies for."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page to be returned."
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "The number of items to return. Default 10. Max 50."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "How to sort the items."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Brand": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ocpc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "link": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "qr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "flowers": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "extracts": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "edibles": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "products": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Condition": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Edible": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ocpc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "brand": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "strain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "qr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "labTest": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "thc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "cbd": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "cannabis": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "hashOil": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Extract": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ocpc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "brand": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "strain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "qr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "labTest": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "thc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "cbd": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Flower": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ocpc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "brand": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "strain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "qr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "labTest": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "thc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "cbd": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Meta": {
+                "type": "object"
+            },
+            "Pagination": {
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "per_page": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "current_page": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "total_pages": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Product": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ocpc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "brand": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "strain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "qr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "labTest": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "thc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "cbd": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "cannabis": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "hashOil": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "SeedCompany": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ocpc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "qr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lineage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "strains": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Strain": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ocpc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "seedCompany": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "qr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "image": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lineage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "genetics": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "children": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Study": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "year": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "doi": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "pubMedId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keyFindings": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "conditions": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
