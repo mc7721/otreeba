@@ -1,0 +1,67 @@
+{
+    "name": "Otreeba",
+    "description": "<p>We collect, maintain, and provide structured data about cannabis brands, products, and medical studies. Open Cannabis Data for Your Technology. Otreeba comes from the word \"abierto\" which means \"open.\" We offer standardized cannabis data and normalization for cannabis seed companies, strains, brands, products, batches, retailers, and studies through a REST API.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/pull_image_08-27-2019-05-08-pm.png",
+    "tags": [
+        "accounts",
+        "brands",
+        "cannabis",
+        "have api",
+        "medical studies",
+        "new",
+        "profile",
+        "retailers",
+        "strains"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/otreeba\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Otreeba Open Cannabis API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/pull_image_08-27-2019-05-08-pm.png",
+            "humanURL": "http:\/\/otreeba.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/otreeba-open-cannabis-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/otreeba-open-cannabis-api.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Swagger",
+            "url": "https:\/\/api.otreeba.com\/v1\/swagger.json"
+        },
+        {
+            "type": "Authentication",
+            "url": "https:\/\/otreeba.com\/#"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/api.otreeba.com\/swagger\/"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/otreeba.com\/plans"
+        },
+        {
+            "type": "Support",
+            "url": "https:\/\/www.zendesk.com\/help-center-closed\/?utm_content=otreeba.zendesk.com&utm_source=helpcenter-closed&utm_medium=poweredbyzendesk"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/otreeba.com"
+        }
+    ]
+}
