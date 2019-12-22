@@ -1,5 +1,5 @@
 {
-    "id": "fb95e668970735d81abcc24bd2bf9afb",
+    "id": "25a961288a975b9b575b8446401cd177",
     "name": "Otreeba Open Cannabis API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "6470554a59481121206bce2402b62e5b",
+            "id": "33746353f9432a33a04fe3f064742e2b",
             "name": "Get a list of all current seed companies.",
             "url": "httpsapi.otreeba.com\/v1\/seed-companies",
             "description": "Returns a paginated list of seed companies.",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "ed4166aed04bd7d2f975cb352df4e839",
+            "id": "43db4d63d58525036730bc4933534847",
             "name": "Find seed company by Open Cannabis Product Code (OCPC).",
             "url": "httpsapi.otreeba.com\/v1\/seed-companies\/{ocpc}",
             "description": "Returns a single seed company.",
@@ -82,11 +82,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "3571da8ecd5de14b1ba32949740954fc",
+            "id": "866884f9d565238f7daba021e283637a",
             "name": "Find strains for a seed company by Open Cannabis Product Code (OCPC).",
             "url": "httpsapi.otreeba.com\/v1\/seed-companies\/{ocpc}\/strains",
             "description": "Returns a paginated list of strains for a single seed company.",
@@ -127,11 +127,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "cdea1663a888af9f6da5aaa1825b7f85",
+            "id": "59e65001fec0e04382fc49722af60df9",
             "name": "Get a list of all current edibles.",
             "url": "httpsapi.otreeba.com\/v1\/edibles",
             "description": "Returns a paginated list of edibles.",
@@ -172,11 +172,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "c614a75dd4904be4ff41829d90626b21",
+            "id": "85b79c6e39575c1af2a366e4b90813b0",
             "name": "Find edible by Open Cannabis Product Code (OCPC).",
             "url": "httpsapi.otreeba.com\/v1\/edibles\/{ocpc}",
             "description": "Returns a single edible.",
@@ -203,11 +203,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "f2336c5a396c5e79fc90ccf848ee7aae",
+            "id": "91cbda3419a7af1a63353cf8f2bf52d5",
             "name": "Get a list of all current extracts.",
             "url": "httpsapi.otreeba.com\/v1\/extracts",
             "description": "Returns a paginated list of extracts.",
@@ -248,11 +248,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "7cd886b6248dfe03ffb22335e2bdf733",
+            "id": "e4ca9f9e097ddd6a9896b67558d20803",
             "name": "Find extract by Open Cannabis Product Code (OCPC).",
             "url": "httpsapi.otreeba.com\/v1\/extracts\/{ocpc}",
             "description": "Returns a single extract.",
@@ -279,11 +279,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "c0dbf996524bd2981f5321fbfe23c4ba",
+            "id": "4496e364a1ea5767cdae02cb26dc1225",
             "name": "Get a list of all current flowers.",
             "url": "httpsapi.otreeba.com\/v1\/flowers",
             "description": "Returns a paginated list of flowers.",
@@ -324,11 +324,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "89dc90498262115e483d2770aba5abe3",
+            "id": "012a035e0728c63e6d71e40edf1bdd9e",
             "name": "Find flower by Open Cannabis Product Code (OCPC).",
             "url": "httpsapi.otreeba.com\/v1\/flowers\/{ocpc}",
             "description": "Returns a single flower.",
@@ -355,11 +355,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "747386f554460755407bd491be8e16bf",
+            "id": "1f91e4ea7914df50104b5ba600278e7f",
             "name": "Get a list of all current brands.",
             "url": "httpsapi.otreeba.com\/v1\/brands",
             "description": "Returns a paginated list of brands.",
@@ -400,11 +400,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "31d28a2a51f899a5b8aa2e415c9ae14b",
+            "id": "769f576fb9bc92acf00a4cceb779d498",
             "name": "Find brand by Open Cannabis Product Code (OCPC).",
             "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}",
             "description": "Returns a single brand.",
@@ -431,11 +431,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "74a6aeb0201f2ba03bc552234fd6ac7d",
+            "id": "11b3211dd7ca56abc5461cf9f3159b66",
             "name": "Get a list of all current flowers for the given brand.",
             "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}\/flowers",
             "description": "Returns a paginated list of flowers.",
@@ -483,11 +483,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "28321d73700ceb30b7b4f00732c7db18",
+            "id": "97e623458f40dc6d2ff3121654c854e8",
             "name": "Get a list of all current extracts for the given brand.",
             "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}\/extracts",
             "description": "Returns a paginated list of extracts.",
@@ -535,11 +535,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "7cedd5a10f8b18bebba6e6ccc1b56dc1",
+            "id": "8ce4d3d41db8560409812d5670ece0ac",
             "name": "Get a list of all current edibles for the given brand.",
             "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}\/edibles",
             "description": "Returns a paginated list of edibles.",
@@ -587,11 +587,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "24f493730e9cdbfb0a18acfac80d4862",
+            "id": "adb99c352cc870b7a12ee18fc9aeda1d",
             "name": "Get a list of all current products for the given brand.",
             "url": "httpsapi.otreeba.com\/v1\/brands\/{ocpc}\/products",
             "description": "Returns a paginated list of products.",
@@ -639,11 +639,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "b52cd9aed8aad9c8c9f676483a852c1f",
+            "id": "6852a60b612c014f95562448b03cb70a",
             "name": "Get a list of all current products.",
             "url": "httpsapi.otreeba.com\/v1\/products",
             "description": "Returns a paginated list of products.",
@@ -684,11 +684,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "950a6fb6b7f61410f5a02086c4ec1d1c",
+            "id": "e60c95d074461227fabd6cfb0b01fede",
             "name": "Find product by Open Cannabis Product Code (OCPC).",
             "url": "httpsapi.otreeba.com\/v1\/products\/{ocpc}",
             "description": "Returns a single product.",
@@ -715,11 +715,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "9ca52b2ef044847d648bcf92695358ab",
+            "id": "170933a90b20b45ac5adbddc2fab182a",
             "name": "Get a list of all current strains.",
             "url": "httpsapi.otreeba.com\/v1\/strains",
             "description": "Returns a paginated list of strains.",
@@ -760,11 +760,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "be5059aa647b5b928c66aef3d9d67828",
+            "id": "a6295f72e7f93a1e9f96497784642d2b",
             "name": "Find strain by Open Cannabis Product Code (OCPC).",
             "url": "httpsapi.otreeba.com\/v1\/strains\/{ocpc}",
             "description": "Returns a single strain.",
@@ -791,11 +791,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "2237e06d034edfecb9be0a986b7e248e",
+            "id": "603e8e0d180730710e8633698a1056eb",
             "name": "Get a list of all current studies.",
             "url": "httpsapi.otreeba.com\/v1\/studies",
             "description": "Returns a paginated list of studies.",
@@ -836,11 +836,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "a26d941d0fbe7f9fe889d5ca08f6ade7",
+            "id": "707c5fb72cc26145da2e1a4cccceb3b7",
             "name": "Get a list of all current conditions for studies.",
             "url": "httpsapi.otreeba.com\/v1\/studies\/conditions",
             "description": "Returns a list of all current conditions for studies.",
@@ -867,11 +867,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "3af82092f6f98e22b7f760a6902af852",
+            "id": "6be108839da55740177346883b36f49c",
             "name": "Find study by DOI, PubMed ID, or slug.",
             "url": "httpsapi.otreeba.com\/v1\/studies\/{identifierType}\/{identifier}",
             "description": "Returns a single study.",
@@ -905,11 +905,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         },
         {
-            "id": "e1a264d86a7dd691f564a17263ce8116",
+            "id": "5689ab57ebfe82470b22937bf59a7ac5",
             "name": "Get a list of all current studies for a given condition.",
             "url": "httpsapi.otreeba.com\/v1\/studies\/conditions\/{conditionSlug}",
             "description": "Returns a paginated list of studies.",
@@ -957,7 +957,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb95e668970735d81abcc24bd2bf9afb",
+            "collectionId": "25a961288a975b9b575b8446401cd177",
             "rawModeData": ""
         }
     ]
